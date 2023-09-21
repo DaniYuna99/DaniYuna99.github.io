@@ -1,0 +1,89 @@
+/* ----- CONTENIDO PRINCIPAL ----- */
+#containerContent {
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  "nada1" "contenidoCentral" "nada2";
+  text-align: center;
+}
+
+#nada1, #nada2 {
+  margin-top: -10px;
+}
+
+#nada1 {
+    display: grid;
+    grid-area: "nada1";
+    background-color: lightblue;
+    margin-right: 15px;
+    margin-left: -15px;
+}
+
+
+#nada2 {
+    display: grid;
+    grid-area: "nada2";
+    background-color: lightblue;
+    margin-left: 15px;
+    margin-right: -15px;
+
+}
+  
+
+#containerContent input, #containerContent select, #containerContent textarea {
+  margin-bottom: 12px;
+}
+
+  
+#entregar {
+  padding: 6px;
+  background-color: lightblue;
+  text-align: center;
+}
+
+
+#entregar:hover {
+  cursor: pointer;
+  color: yellow;
+  background-color: blue;
+}
+
+
+#fechaNacimiento {
+  padding: 0 46px 0 46px;
+}
+
+
+#estadoCivil {
+  margin-top: 7px;
+}
+
+
+#hijos {
+  margin-top: 7px;
+}
+
+
+#preferencia {
+  margin-top: 5px;
+  padding: 3px 46px 3px 46px;
+}
+
+
+#divTabla {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "tabla";
+}
+
+
+#tabla {
+  display: grid;
+  grid-area: "tabla";
+}

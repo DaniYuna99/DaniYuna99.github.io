@@ -1,0 +1,37 @@
+#containerContent {
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "nada1" "contenidoCentral" "nada2";
+    text-align: center;
+}
+
+
+#nada1 {
+    display: grid;
+    grid-area: "nada1";
+    background-color: lightblue;
+}
+
+
+#nada2 {
+    display: grid;
+    grid-area: "nada1";
+    background-color: lightblue;
+}
+
+
+#containerContent img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+#contenidoCentral p {
+    font-size: larger;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+}

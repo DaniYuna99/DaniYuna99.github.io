@@ -1,0 +1,134 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de empleo</title>
+
+    <!-- CSS exclusivo de esta página -->
+    <link rel="stylesheet" href="css/formulario.css">
+
+    <!-- CSS exclusivo del header y footer de todas las páginas -->
+    <link rel="stylesheet" href="css/headerYFooter.css">
+
+    <!-- JS exclusivo de esta página -->
+    <script src="js/formulario.js"> </script>
+
+</head>
+
+
+<body>
+
+    <div id="containerHeader">
+     
+      <div id="header">
+        <div id="logoHeader">
+          <a href="index.html"> <img id="imagenLogo" src="images/logo.png"> </a>
+        </div>
+  
+        <div id="tituloHeader"> 
+          <a href="index.html"> <h2 id="textoHeader"> ElectroTecno: tu empresa de software de confianza </h2> </a>
+        </div>
+        
+        <div id="menuHorizontal">
+          <ul>
+            <li> 
+              <button id="botonFormulario" onclick="window.location.href='formulario.html';"> ¿Quieres solicitar empleo? </button> 
+              <button id="botonFormulario" onclick="window.location.href='sobreNosotros.html';"> Sobre nosotros </button> 
+              <button id="botonFormulario" onclick="window.location.href='localizacion.html';"> Localización </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  
+    <!-- CONTENIDO PRINCIPAL -->
+    <div id="containerContent">
+
+        <div id="nada1"> </div>
+
+        
+        <div id="contenidoCentral"> 
+
+          <h2> FORMULARIO DE EMPLEO </h2>
+
+          <form action="#" method="get">
+
+            <fieldset>
+              <legend>Datos personales:</legend>
+              <label for="nombre">Nombre:</label> <br>
+              <input type="text" id="nombre" name="nombre" required> <br>
+              <label for="apellidos">Apellidos:</label> <br>
+              <input type="text" id="apellidos" name="apellidos" required> <br>
+              <label for="dni"> DNI/NIF: </label> <br>
+              <input type="text" id="dni" name="dni" required> <br>
+              <label for="telefono"> Telefono:</label> <br>
+              <input type="tel" id="telefono" name="telefono" required> <br> 
+              <label for="email"> Email:</label> <br>
+              <input type="email" id="email" name="email" required> <br> 
+              <label for="fechaNacimiento"> Fecha de nacimiento:</label> <br>
+              <input type="date" id="fechaNacimiento" name="fechaNacimiento" required> <br> <br>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend> Datos de domicilio </legend>
+                <label for="nacionalidad"> Nacionalidad:</label> <br>
+                <input type="text" id="nacionalidad" name="nacionalidad" required> <br>
+                <label for="lugarVivienda"> Lugar donde reside:</label> <br>
+                <input type="text" id="lugarVivienda" name="lugarVivienda" required> <br>
+                <label for="estadoCivil"> Estado civil:</label> <br>
+                <input type="radio" id="estadoCivil" name="estadoCivil" value="Soltero" required> Soltero
+                <input type="radio" id="estadoCivil" name="estadoCivil" value="Casado" required> Casado <br>
+                <label for="hijos"> ¿Tienes hijos o personas a su cuidado?</label> <br>
+                <input type="radio" id="hijos1" name="hijos" value="Sí" required> Sí 
+                <input type="radio" id="hijos2" name="hijos" value="No" required> No <br>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend> Datos de empleo </legend>
+                <label for="preferencia"> Selecciona qué es lo que prefiere:</label> <br>
+                <select id="preferencia" required>
+                    <option value="Frontend"> Frontend</option>
+                    <option value="Backend"> Backend</option>
+                    <option value="Ambos"> Ambos</option>
+                </select> <br> 
+                <label for="descripcionEmpleo"> Escribe un poco sobre el trabajo que usted quiere:</label> <br>
+                <textarea id="descripcionEmpleo" rows="8" cols="90" required> </textarea>
+            </fieldset> 
+
+            <br> <br>
+
+            <input id="crearTabla" type="button" onclick="crearTablaConDatos()" value="Generar tabla con datos">
+
+            <br>
+
+            <div id="divTabla">
+              <div id="tabla">
+                <p id="resultado"> </p>
+              </div>
+            </div>
+
+          </form> 
+        </div>
+        
+
+        <div id="nada2"> </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <div id="containerFooter">
+      <div id="footer">
+        <p class="letraFooter"> &copy;Empresas Daniel Carpintero - 2023 </p>
+      </div>
+    </div>
+
+</body>
+
+</html>

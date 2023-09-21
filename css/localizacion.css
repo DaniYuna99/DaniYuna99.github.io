@@ -1,0 +1,47 @@
+#containerContent {
+    align-content: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "nada1" "contenidoCentral" "nada2";
+}
+
+
+#nada1 {
+    display: grid;
+    grid-area: "nada1";
+    background-color: lightblue;
+  }
+  
+  
+#nada2 {
+    display: grid;
+    grid-area: "nada2";
+    background-color: lightblue;
+}
+
+
+/*#contenidoCentral {
+    display: grid;
+    grid-area: "contenidoCentral";
+    text-align: center;
+    align-content: center;
+}*/
+
+
+#containerContent iframe {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    align-content: center;
+}
+
+
+#containerContent p {
+    font-size: larger;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    text-align: center;
+}

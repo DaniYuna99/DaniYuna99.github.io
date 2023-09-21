@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación Inicial Daniel Carpintero Quesada</title>
+
+    <!-- CSS exclusivo de esta página -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- CSS exclusivo del header y footer de todas las páginas -->
+    <link rel="stylesheet" href="css/headerYFooter.css">
+
+    <!-- JS exclusivo de esta página -->
+    <script src="js/index.js"> </script>
+
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+    <div id="containerHeader">
+     
+      <div id="header">
+        <div id="logoHeader">
+          <a href="index.html"> <img id="imagenLogo" src="images/logo.png"> </a>
+        </div>
+  
+        <div id="tituloHeader"> 
+          <a href="index.html"> <h2 id="textoHeader"> ElectroTecno: tu empresa de software de confianza </h2> </a>
+        </div>
+        
+        <div id="menuHorizontal">
+          <ul>
+            <li> 
+              <button id="botonFormulario" onclick="window.location.href='formulario.html';"> ¿Quieres solicitar empleo? </button> 
+              <button id="botonFormulario" onclick="window.location.href='sobreNosotros.html';"> Sobre nosotros </button> 
+              <button id="botonFormulario" onclick="window.location.href='localizacion.html';"> Localización </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  
+    <!-- CONTENIDO PRINCIPAL -->
+    <div id="containerContent">
+      
+      <div id="nada1"> </div>
+
+      <div id="contenidoCentral">
+        <div id="trozoContenido1">
+          <h2 id="textoInicio"> INICIO </h2>
+          <img src="images/empresarios1.jpg"
+              height="600px" width="950px">
+          <p id="textoImagen1" class="textoDebajoImagen"> Nosotros somos la empresa líder en ventas. También somos <span id="span1">la que mejor tenemos satisfechos a todos sus empleados. </span> </p>
+          <br> <button type="button" id="botonMostrar1" onclick="mostrarFrase1()"> Expandir </button> <button id="botonEsconder1" onclick="esconderFrase1()"> Cerrar </button>
+        </div>
+  
+        <div id="trozoContenido2">
+          <img src="images/empresarios2.jpg"
+          height="600px" width="950px">
+          <p id="textoImagen2" class="textoDebajoImagen"> ¿Buscas cursos de formación? Nosotros te pagaremos los cursos si trabajas aquí, y <span id="span2">son de calidad certificada.</span> </p>
+          <br> <button type="button" id="botonMostrar2" onclick="mostrarFrase2()"> Expandir </button> <button id="botonEsconder2" onclick="esconderFrase2()"> Cerrar </button>        
+        </div>
+        
+        <div id="trozoContenido3">
+          <img src="images/empresarios3.jpg"
+          height="600px" width="950px">
+          <p id="textoImagen3" class="textoDebajoImagen"> Estamos contratando nuevos trabajadores de software. Si quieres presentar tu <span id="span3">formulario de empleo, pulsa el botón de la esquina superior derecha de la cabecera de la página  para rellenarlo.</span> </p>
+          <br> <button type="button" id="botonMostrar3" onclick="mostrarFrase3()"> Expandir </button> <button id="botonEsconder3" onclick="esconderFrase3()"> Cerrar </button>        
+        </div>
+      </div>
+
+      <div id="nada2"> </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <div id="containerFooter">
+      <div id="footer">
+        <p class="letraFooter"> &copy;Empresas Daniel Carpintero - 2023 </p>
+      </div>
+    </div>
+
+</body>
+
+</html>

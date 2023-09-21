@@ -1,0 +1,102 @@
+/* ----- CONTENIDO PRINCIPAL ----- */
+#containerContent {
+  margin-top: 15px;
+  display: grid;
+  text-align: center;
+  grid-template-rows: 1fr ;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-areas: 
+  "nada1" "contenidoCentral" "nada2";
+}
+
+
+#nada1 {
+  display: grid;
+  grid-area: "nada1";
+  background-color: lightblue;
+  margin-top: -15px;
+}
+
+
+#nada2 {
+  display: grid;
+  grid-area: "nada2";
+  background-color: lightblue;
+  margin-top: -15px;
+}
+
+#textoInicio {
+  position: relative;
+  bottom: 25px;
+}
+
+
+#contenidoCentral {
+  display: grid;
+  grid-area: "contenidoCentral";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "trozoContenido1"
+  "trozoContenido2"
+  "trozoContenido3";
+}
+
+
+#trozoContenido1, #trozoContenido2, #trozoContenido3 {
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+
+#trozoContenido1 {
+  display: grid;
+  grid-area: "trozoContenido1";
+}
+
+
+#trozoContenido2 {
+  display: grid;
+  grid-area: "trozoContenido2"
+}
+
+
+#trozoContenido3 {
+  display: grid;
+  grid-area: "trozoContenido3"
+}
+
+
+.textoDebajoImagen {
+  font-size: larger;
+}
+
+
+#span1, #span2, #span3 {
+  display: none;
+}
+
+
+#botonEsconder1, #botonEsconder2, #botonEsconder3 {
+  display: none;
+  text-align: center;
+  padding: 4px;
+  background-color: #993333;
+  color: white;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+
+#botonMostrar1, #botonMostrar2, #botonMostrar3 {
+  text-align: center;
+  padding: 4px;
+  background-color: #993333;
+  color: white;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+
+

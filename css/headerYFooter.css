@@ -1,0 +1,109 @@
+/* ----- REGLAS DE ESTILO DE LA PÁGINA ----- */
+html {
+    background-color: #66CCFF;
+}
+  
+body {
+    min-height: 100vh; 
+    margin: 0; 
+}
+
+/*
+- Color header: 
+#0066CC
+0, 102, 204
+
+- Color fondo:
+#66CCFF
+102, 204, 255
+
+- Color footer:
+black
+
+-Color botones:
+#993333
+153, 51, 51
+*/
+
+
+
+/* ----- HEADER ----- */
+#header {
+    background-color: #0066CC;
+    padding: 3px;
+    display: grid;
+    font-size: 16px;
+    text-align: center;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 7fr 4fr;
+    grid-template-areas: 
+    "logoHeader" "tituloHeader" "menuHorizontal";
+}
+  
+
+#logoHeader {
+    display: grid;
+    grid-area: "logoHeader";
+}
+  
+
+#menuHorizontal {
+    display: grid;
+    grid-area: "menuHorizontal";
+    color: white;
+}
+
+
+#menuHorizontal li {
+    display: inline-block;
+    margin-left: 10px;
+}
+  
+
+#botonFormulario {
+    padding: 8px;
+    background-color: #993333;
+    border-radius: 7px;
+    color: white;
+}
+  
+
+#botonFormulario:hover {
+    color: yellow;
+    cursor: pointer;
+}
+  
+
+#tituloHeader {
+    display: grid;
+    grid-area: "tituloHeader";
+    font-family: 'Brush Script MT', cursive;
+    font-size: large;
+    text-align: right;
+}
+
+
+#tituloHeader a {
+    text-decoration: none;
+    color: white;
+}
+  
+
+#imagenLogo {
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+
+
+/* ----- FOOTER ----- */
+#footer {
+    color: white;
+    background-color: black;
+    font-size: 16px;
+    padding: 3px;
+    text-align: center;
+}
